@@ -12,7 +12,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///users.db'
 app.config['SECRET_KEY'] = 'your_secret_key'
-API_KEY='AIzaSyCxZcEyollL6TWFcRoWhrskTpBeFuoH7AI'
+API_KEY="<Your API_KEY>"
 
 
 s = SafeBrowsing(API_KEY)
@@ -38,7 +38,7 @@ class User(db_sql.Model, UserMixin):
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-uri = "mongodb+srv://aayushjuhukar:juhukar03@cluster0.soop5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = "<Your URI>"
 # Create a new client and connect to the server
 client = MongoClient(uri)
 # Send a ping to confirm a successful connection
