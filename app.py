@@ -77,7 +77,7 @@ def short():
             random_uuid = uuid.uuid4().int
             base62_chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
             short_id = ""
-            while random_uuid > 0 and len(short_id) < 6:  # Limit to 6 characters
+            while random_uuid > 0 and len(short_id) < 6:  
                 short_id = base62_chars[random_uuid % 62] + short_id
                 random_uuid //= 62
             surl=f'http://127.0.0.1:5000/{short_id}'
@@ -86,7 +86,7 @@ def short():
             img.save(img_io, "PNG")
             img_io.seek(0)
 
-            # Convert to Base64
+            
             base64_str = base64.b64encode(img_io.getvalue()).decode("utf-8")
             # result=coll.insert_one({'longurl':lurl, 'shorturl':surl})
             if current_user.is_authenticated:
