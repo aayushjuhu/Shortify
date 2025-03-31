@@ -1,0 +1,82 @@
+body{
+    font-family: Oswald;
+    color: rgb(12, 85, 105);
+    /* background-image: url('/static/bg.jpg'); */
+    /* background-size: cover; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(201, 0, 178, 0.323) 0%, rgba(117, 0, 84, 0.186) 74%);
+}
+.urlbox{
+    margin: 0 auto;
+    border: 1px solid rgba(196, 196, 196, 0.46);
+    align-content: center;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.226);
+    width:50%;
+    margin-top: 10vh;
+    padding: 4vh;
+    border-radius: 2vh;
+}
+
+#urlbx, #urlbx1, #urlbx2{
+    border-color: blueviolet;
+}
+
+textarea{
+    resize: none;
+}
+
+.floating-alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    max-width: 400px;
+    text-align: center;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+}
+
+
+.form-control{
+    width: 100%;
+}
+
+#btn1, #btn2,#lbtn{
+    border-color: blueviolet;
+    --bs-btn-hover-bg: blueviolet;
+    --bs-btn-hover-color: white;
+    --bs-btn-color: rgb(12, 85, 105);
+}
+
+.auth-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.155);
+    border: 1px solid rgba(196, 196, 196, 0.309);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.nav-pills .nav-link.active{
+    background-color: blueviolet;
+}
+
+.nav-link{
+    color: rgb(12, 85, 105);
+}
+
+.pic{
+    height: 10vh;
+}
+
+.table{
+    background-color: rgba(196, 196, 196, 0.155);
+    border: 1px solid rgba(196, 196, 196, 0.309);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
