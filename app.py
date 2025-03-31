@@ -10,7 +10,7 @@ from flask_login import LoginManager,UserMixin,login_user,login_required,logout_
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app=Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///users.db'
+app.config['SQLALCHEMY_DATABASE_URI']=''
 app.config['SECRET_KEY'] = 'your_secret_key'
 API_KEY="<Your API_KEY>"
 
